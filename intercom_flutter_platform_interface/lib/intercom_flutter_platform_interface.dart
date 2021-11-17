@@ -132,6 +132,16 @@ abstract class IntercomFlutterPlatform extends PlatformInterface {
     throw UnimplementedError('setBottomPadding() has not been implemented.');
   }
 
+  /// This method allows you to set a fixed right padding for in app messages and the launcher.
+  ///
+  /// It is useful if you want more control over the positioning of intercom FAB placement
+  /// position over your app
+  ///
+  /// [padding] is the size of the right padding in points.
+  Future<void> setRightPadding(int padding) {
+    throw UnimplementedError('setBottomPadding() has not been implemented.');
+  }
+
   /// To display an Article, pass in an [articleId] from your Intercom workspace.
   ///
   /// An article must be ‘live’ to be used in this feature.

@@ -173,6 +173,11 @@ class MethodChannelIntercomFlutter extends IntercomFlutterPlatform {
   }
 
   @override
+  Future<void> setRightPadding(int padding) async {
+    await _channel.invokeMethod('setRightPadding', {'rightPadding': padding});
+  }
+
+  @override
   Future<void> displayArticle(String articleId) async {
     await _channel.invokeMethod('displayArticle', {'articleId': articleId});
   }
